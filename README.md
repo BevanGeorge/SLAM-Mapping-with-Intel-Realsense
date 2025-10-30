@@ -1,3 +1,4 @@
+1) Repo Structure
 This repo lets you run a PX4 SITL multicopter (x500) inside Gazebo (Ignition/GZ) using a custom environment built from an RTAB-Map reconstruction. We convert an RTAB-Map .ply point cloud to a renderable mesh (.obj) and reference it inside a self-contained SDF world—no Fuel downloads required.
 
 What you get
@@ -19,3 +20,17 @@ Steps to run:
 Gazebo only (for quick world checks)
 
 PX4 SITL + Gazebo (for flight simulations)
+
+
+2) Prerequisites
+
+Ubuntu 22.04 (Jammy) recommended
+
+Gazebo (GZ/Ignition) installed and working (gz sim --help)
+
+PX4-Autopilot checked out with matching submodules for your chosen SITL tag
+(e.g. v1.14.3 or v1.15.0)
+
+For converting PLY→OBJ (pick either route):
+
+Assimp utils (no Python deps):
